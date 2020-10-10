@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  
+  <title>like/dislike button</title>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
+      <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+  <button id="dislike">
+	<i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+</button>
+<input type ="number" id ="input1" value="0" name ="">
+<button id="like">
+	<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+</button>
+<input type ="number" id ="input2" value="0" name ="">
+
+ <script type ="text/javascript">
+ let likebtn = document.querySelector('#like');
+ let dislikebtn = document.querySelector('#dislike');
+ let input1 = document.querySelector('#input1');
+ let input2 = document.querySelector('#input2');
+ dislikebtn.addEventListener('click',()=>{
+     input1.value = parseInt(input1.value) +1;
+ })
+ likebtn.addEventListener('click',()=>{
+     input2.value = parseInt(input2.value) +1;
+ })
+ </script> 
+
+</body>
+
+</html>
